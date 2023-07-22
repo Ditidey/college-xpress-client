@@ -8,7 +8,7 @@ const Ranks = () => {
     const [detail, setDetail] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews`)
+        fetch(`https://college-xpress-server.vercel.app/reviews`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -37,7 +37,7 @@ const Ranks = () => {
                 {
                     detail?.map(de =>  
                         <SwiperSlide key={de._id} className='flex'> 
-                         <div   className='bg-blue-100 mx-auto w-full'> 
+                         <div   className='  mx-auto w-full'> 
                                <p className='text-center font-bold'>{de.college}</p>
                                 <p className='text-center'>{de.name}</p>
                                 <p className='text-center'>{de.review}</p>

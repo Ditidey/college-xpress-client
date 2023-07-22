@@ -8,7 +8,7 @@ const AdmissionPage = () => {
     const [modalOpen, setModal] = useState(false);
     const [col, setCol] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/colleges`)
+        fetch(`https://college-xpress-server.vercel.app/colleges`)
             .then(res => res.json())
             .then(data => {
                 setColleges(data)

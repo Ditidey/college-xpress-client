@@ -14,7 +14,7 @@ const AddReview = ({openModal, closeModal, st}) => {
             name, email, rating, review, college: st.college, fee:st.fee, collegeId:st.collegeId,
              
          }
-         fetch('http://localhost:5000/reviews', {
+         fetch('https://college-xpress-server.vercel.app/reviews', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(reviewInfo)

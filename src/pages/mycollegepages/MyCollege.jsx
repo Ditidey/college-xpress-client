@@ -10,7 +10,7 @@ const MyCollege = () => {
     const [st, setSt] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/students?email=${user?.email}`)
+        fetch(`https://college-xpress-server.vercel.app/students?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

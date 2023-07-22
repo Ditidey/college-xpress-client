@@ -4,7 +4,7 @@ import { FaFacebook, FaYoutube, FaTwitterSquare, FaLinkedin, FaThumbsUp } from "
 
 const Footer = () => {
     return (
-        <div>
+        <div className='bg-slate-300'>
          
             <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 shadow-xl">
                 <div className="  flex  justify-evenly pt-5">

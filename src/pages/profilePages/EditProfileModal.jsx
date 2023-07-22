@@ -16,7 +16,7 @@ const EditProfileModal = ({openModal, closeModal, info}) => {
             name, email, uni, address, blood, result
              
          }
-         fetch(`http://localhost:5000/users/${info?.email}`, {
+         fetch(`https://college-xpress-server.vercel.app/users/${info?.email}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(reviewInfo)

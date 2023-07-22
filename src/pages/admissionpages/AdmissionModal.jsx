@@ -18,7 +18,7 @@ const AdmissionModal = ({openModal, closeModal, info}) => {
             collegeImage: info.collegeImage, research: info.researchCount, teacher: info.teachersCount,
             students: info.students
          }
-         fetch('http://localhost:5000/enroll', {
+         fetch('https://college-xpress-server.vercel.app/enroll', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(enrollInfo)

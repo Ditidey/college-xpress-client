@@ -24,41 +24,42 @@ const Gallery = () => {
             <SecTitle title={'Happy Graduates'}></SecTitle>
             <div className='grid md:grid-rows-3 gap-4 mt-5 bg-blue-50'>
                 <div className='flex'>
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad} alt="" className='w-full h-full'/></div>
-                    <div  className='w-[320px] h-[300px] m-2'>
-                        <div><img src={grad1} alt="" className='w-full h-[259px] m-1'/></div>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad} alt="" className='w-full h-full'/></div>
+                    <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
+                        <div><img src={grad1} alt="" className='w-full h-[259px] m-1 '/></div>
                         {/* <div> <img src={grad2} alt="" className='w-full h-full m-1'/></div> */}
                     </div>
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad4} alt="" className='w-full h-full'/></div>
-                    <div  className='w-[320px] h-[300px] m-2'>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad4} alt="" className='w-full h-full'/></div>
+                    <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
                         <div><img src={grad5} alt="" className='w-full h-full m-1'/></div>
-                        <div> <img src={grad6} alt="" className='w-full h-full m-1'/></div>
+                        <div> <img src={grad6} alt="" className='w-full h-[320px] m-1 mt-20 border-8 rounded-xl border-blue-200'/></div>
                     </div>
                 </div>
                 <div className='flex'>
                      
-                    <div  className='w-[320px] h-[300px] m-2'>
-                        <div><img src={grad7} alt="" className='w-full h-full m-1'/></div>
+                    <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
+                        <div><img src={grad7} alt="" className='w-full h-[280px] m-1 '/></div>
                         {/* <div> <img src={grad8} alt="" className='w-full h-full m-1'/></div> */}
                     </div>
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad13} alt="" className='w-full h-full'/></div>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad13} alt="" className='w-full h-full'/></div>
                     {/* <div  className='w-[320px] h-[300px] m-2'>
                         <div><img src={grad9} alt="" className='w-full h-full m-1'/></div>
                         <div> <img src={grad10} alt="" className='w-full h-[180px] m-1'/></div>
                     </div> */}
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad14} alt="" className='w-full h-full'/></div>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad14} alt="" className='w-full h-full'/></div>
                 </div>
                 <div className='flex'>
                     
-                    <div  className='w-[320px] h-[300px] m-2'>
-                        <div><img src={grad11} alt="" className='w-full h-full m-1'/></div>
-                        <div> <img src={grad12} alt="" className='w-full h-full m-1'/></div>
+                    <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
+                        <div><img src={grad11} alt="" className='w-full h-[290px] m-1'/></div>
+                        <div> <img src={grad12} alt="" className='w-full h-[250px] m-1 border-8 rounded-xl border-blue-200'/></div>
                     </div>
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad15} alt="" className='w-full h-full'/></div>
-                    <div className='w-[320px] h-[300px] m-2'><img src={grad16} alt="" className='w-full h-full'/></div>
-                    <div  className='w-[320px] h-[300px] m-2'>
-                        <div><img src={grad13} alt="" className='w-full h-full m-1'/></div>
-                        <div> <img src={grad18} alt="" className='w-full h-full m-1'/></div>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad15} alt="" className='w-full h-full'/></div>
+                    <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
+                        <img src={grad16} alt="" className='w-full h-full'/></div>
+                    <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
+                        <div><img src={grad13} alt="" className='w-full h-[280px] m-1'/></div>
+                        <div> <img src={grad18} alt="" className='w-[320px] h-full m-1 mt-4 border-8 rounded-xl border-blue-200'/></div>
                     </div>
                 </div>
                  

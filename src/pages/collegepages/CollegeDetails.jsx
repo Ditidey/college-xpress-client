@@ -7,7 +7,7 @@ const CollegeDetails = () => {
     const { collegeName, collegeImage, collegeRating, admissionDate, researchCount, students, departments, events, sports, shortDescription, admissionFee, teachersCount, _id } = college;
     console.log(id, college)
     useEffect(() => {
-        fetch(`http://localhost:5000/college/${id}`)
+        fetch(`https://college-xpress-server.vercel.app/college/${id}`)
             .then(res => res.json())
             .then(data => {
                 setCollege(data)
