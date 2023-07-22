@@ -16,7 +16,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className="md:flex md:justify-evenly rounded-2xl shadow-2xl md:px-6 px-2 py-4 ">
+        <div className="md:flex md:justify-evenly rounded-2xl shadow-xl md:px-6 px-2 py-4 ">
             <div className="flex">
                 <Link to='/' className='flex'>
                     <img src={logo} alt="" className='w-8 h-8' />
