@@ -14,12 +14,12 @@ const CollegePage = () => {
             })
     }, [])
     return (
-        <div className='md:p-10 p-2'>
+        <div className='md:p-10 p-2 my-10'>
             <SecTitle title={'World best colleges'} subtitle={'Choose your favorite college and enrich your life '}></SecTitle>
             <div className='mt-10 grid md:grid-cols-3 gap-6'>
                 {
                     colleges?.map(col => 
-                    <div key={col._id} className='md:w-[400px] h-[500px] '>
+                    <div key={col._id} className='md:w-[400px] w-full h-[500px] '>
                         <div>
                             <img src={col.collegeImage} alt="" className='md:w-[400px] h-[300px] hover:scale-110'/>
                         </div>

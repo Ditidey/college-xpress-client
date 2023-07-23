@@ -52,13 +52,13 @@ const Register = () => {
             .catch(error => setError(error.message))
     }
     return (
-        <div className='md:p-10 p-2'>
+        <div className='md:p-10 p-2 my-10'>
 
             <SecTitle title={'Create Account'}></SecTitle>
           
             <p className='text-red-700 font-bold text-center text-2xl  p-2'>{error}</p>
 
-            <form onSubmit={handleSubmit(handleOnSubmit)} className='w-1/2 mx-auto bg-slate-100 p-10 ps-56 m-8 shadow-xl rounded-xl py-14'>
+            <form onSubmit={handleSubmit(handleOnSubmit)} className='md:w-1/2 w-full mt-5 md:mx-auto bg-slate-100 md:p-10 p-3 md:ps-56 md:m-8 shadow-xl rounded-xl py-14'>
                 <label htmlFor="" className='font-mono ms-2 '>Name</label><br />
                 <input type='text' defaultValue="name" {...register("name", { required: true, required: "Name is required" })} className="p-3 w-full max-w-xs" /> <br />
                 <label htmlFor="" className='font-mono ms-2 '>Photo</label><br />
@@ -74,7 +74,7 @@ const Register = () => {
                 <input type="submit" value='Register' className="btn w-2/4 p-3 bg-blue-800  mt-6 ms-4 text-white " />
             </form>
 
-            <button onClick={handleGoogleLogin} className="  md:ps-52 md:ms-96 shadow-2xl text-yellow-500">Login with Google</button>
+            <button onClick={handleGoogleLogin} className="  md:ps-52 ps-20 md:ms-96  text-yellow-500">Login with Google</button>
 
             <p className='text-center mt-4 mb-5 text-blue-700'>Already registered? <Link to='/login'>Login</Link></p>
         </div>

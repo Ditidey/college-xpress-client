@@ -16,7 +16,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className="md:flex md:justify-evenly rounded-2xl shadow-xl md:px-6 px-2 py-4 ">
+        <div className="flex md:justify-evenly rounded-2xl shadow-xl md:px-6 px-2 py-4 p-3 w-full">
             <div className="flex">
                 <Link to='/' className='flex'>
                     <img src={logo} alt="" className='w-8 h-8' />
@@ -25,12 +25,12 @@ const NavBar = () => {
             </div>
 
             <div className="">
-                <div className=" dropdown relative">
+                <div className=" md:relative">
                     {
-                        open ? <FaTimes onClick={() => setOpen(!open)} className='lg:hidden ms-52'></FaTimes>
-                            : <FaBars onClick={() => setOpen(!open)} className='lg:hidden ms-52'></FaBars>
+                        open ? <FaTimes onClick={() => setOpen(!open)} className='lg:hidden ps-4  mt-3 w-8'></FaTimes>
+                            : <FaBars onClick={() => setOpen(!open)} className='lg:hidden ps-4 mt-3  w-8'></FaBars>
                     }
-                    <ul tabIndex={0} className={`md:flex md:space-x-8 md:static mt-3  absolute duration-500 ${open === true ? 'top-6 ms-48 bg-white p-4' : '-top-72 ms-44'}`}>
+                    <ul tabIndex={0} className={`md:flex md:space-x-8 md:static mt-3  absolute duration-500 ${open === true ? 'top-10    bg-white p-8' : '-top-72 '}`}>
                         <li><NavLink to='/' className={({ isActive }) => isActive ? 'text-red-800 font-bold' : ''}>Home</NavLink></li>
                         <li><NavLink to='/college-page' className={({ isActive }) => isActive ? 'text-red-800 font-bold' : ''}>Colleges</NavLink></li>
                         <li><NavLink to='/admission-page' className={({ isActive }) => isActive ? 'text-red-800 font-bold' : ''}>Admission</NavLink></li>

@@ -20,10 +20,10 @@ import SecTitle from '../../components/shared/SecTitle';
 
 const Gallery = () => {
     return (
-        <div className='md:p-10 p2 w-full mx-auto h-full mb-32'>
+        <div className='md:p-10 p-2 w-full mx-auto h-full mb-60 md:mb-32 mt-5'>
             <SecTitle title={'Happy Graduates'}></SecTitle>
             <div className='grid md:grid-rows-3 gap-4 mt-5 bg-blue-50'>
-                <div className='flex'>
+                <div className='md:flex'>
                     <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad} alt="" className='w-full h-full'/></div>
                     <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
                         <div><img src={grad1} alt="" className='w-full h-[259px] m-1 '/></div>
@@ -35,7 +35,7 @@ const Gallery = () => {
                         <div> <img src={grad6} alt="" className='w-full h-[320px] m-1 mt-20 border-8 rounded-xl border-blue-200'/></div>
                     </div>
                 </div>
-                <div className='flex'>
+                <div className='md:flex'>
                      
                     <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
                         <div><img src={grad7} alt="" className='w-full h-[280px] m-1 '/></div>
@@ -48,7 +48,7 @@ const Gallery = () => {
                     </div> */}
                     <div className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'><img src={grad14} alt="" className='w-full h-full'/></div>
                 </div>
-                <div className='flex'>
+                <div className='md:flex'>
                     
                     <div  className='w-[320px] h-[300px] m-2 border-8 rounded-xl border-blue-200'>
                         <div><img src={grad11} alt="" className='w-full h-[290px] m-1'/></div>

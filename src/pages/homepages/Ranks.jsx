@@ -16,42 +16,30 @@ const Ranks = () => {
             })
     }, [])
     return (
-        <div className='md:p-10 p-2 bg-blue-50'>
+        <div className='md:p-10 p-2 bg-blue-50 mt-5'>
             <SecTitle title={"Students' Reviews"}></SecTitle>
          
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 1500,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper mt-5 flex"
-            >  
+            < div className='grid md:grid-cols-3 mt-5'>  
            
                 {
                     detail?.map(de =>  
-                        <SwiperSlide key={de._id} className='flex'> 
-                         <div   className='  mx-auto w-full'> 
-                               <p className='text-center font-bold'>{de.college}</p>
-                                <p className='text-center'>{de.name}</p>
-                                <p className='text-center'>{de.review}</p>
+                        < div key={de._id} className='p-5  mx-auto w-full md:w-[450px] shadow-2xl'> 
+                         
+                               <p className='text-center font-bold text-xl'>{de.college}</p>
+                               
+                                <p className='  mt-2 text-justify'>{de.review}</p>
+                                <p className='text-center pt-4'>{de.name}</p>
                                 <div className='flex justify-center mt-3'>
                                 <FaRev className='text-blue-800 w-10 h-10 text-center'></FaRev>
                                 <FaRev className='text-blue-800 w-10 h-10 text-center'></FaRev>
                                 </div>
                      
+                                
                                 </div>
-                                </SwiperSlide>
                     )
                 }
   
-            </Swiper>
+            </div>
         </div>
     );
 };

@@ -14,14 +14,14 @@ const Colleges = () => {
             })
     }, [])
     return (
-        <div className='md:p-10 p-2 md:mt-5'>
+        <div className='md:p-10 p-2 mt-5'>
         <SecTitle title={'Find your colleges'} ></SecTitle>
         <div className='mt-10 grid md:grid-cols-3 gap-6'>
             {
                 colleges?.slice(0, 3).map(col => 
-                <div key={col._id} className='md:w-[400px] h-[500px] '>
+                <div key={col._id} className='md:w-[400px] w-full h-[500px] '>
                     <div>
-                        <img src={col.collegeImage} alt="" className='md:w-[400px] h-[300px] hover:scale-110'/>
+                        <img src={col.collegeImage} alt="" className='md:w-[400px] w-full h-[300px] hover:scale-110'/>
                     </div>
                     <div className='text-center font-sans pt-3 bg-slate-100 h-[200px]'>
                         <h3 className='font-bold text-xl my-3'> {col.collegeName}</h3>

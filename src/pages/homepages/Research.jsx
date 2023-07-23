@@ -14,7 +14,7 @@ const Research = () => {
             })
     }, [])
     return (
-        <div className='md:p-10 p-2'>
+        <div className='md:p-10 p-2 mt-5'>
             <SecTitle title={"Students' Research"}></SecTitle>
             <div className='grid md:grid-cols-3 gap-10 mt-8'>
                 {

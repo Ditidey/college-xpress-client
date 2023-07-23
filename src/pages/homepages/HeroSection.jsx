@@ -17,7 +17,7 @@ const HeroSection = () => {
 
                     <div className='md:flex md:justify-evenly' >
                         {/* for left side hero section */}
-                        <div id='div-one' className='md:items-center mt-10 md:ms-10 w-[280px] md:w-auto' data-aos="fade-left" data-aos-duration="1000">
+                        <div id='div-one' className='md:items-center md:mt-10 mt-4 md:ms-10 px-3 w-full md:w-auto' data-aos="fade-left" data-aos-duration="1000">
                             <h2 className='font-bold text-5xl py-5 bg-gradient-to-r from-cyan-400 to-blue-700 text-transparent bg-clip-text'>
                             Your Pathway <br /> <span className='ms-10'>to</span><br />
                                 <Typewriter
@@ -35,14 +35,14 @@ const HeroSection = () => {
 
                         {/* right side hero section */}
                    
-                        <div id='wavy' className='items-center px-20 bg-white flex' data-aos="fade-up-left" data-aos-duration="1000"  >
+                        <div id='wavy' className='items-center md:px-20 px-10 bg-white md:flex' data-aos="fade-up-left" data-aos-duration="1000"  >
                            <div className='md:absolute end-14   '  >
                          
-                           <Lottie animationData={lottieAni2} className='h-[400px] md:w-[400px] w-[250px] mx-auto pb-20 -top-16 -translate-x-6' />
+                           <Lottie animationData={lottieAni2} className='md:h-[400px] h-[250px] md:pt-0 pt-10 md:w-[400px] w-[250px] mx-auto pb-20 -top-16 -translate-x-6' />
 
                            </div>
                            <div className=' '>
-                            <h2 className='text-4xl text-blue-400'>Well service, well learning</h2>
+                            <h2 className='md:text-4xl text-3xl text-blue-400 pb-5 font-semibold'>Well service, well learning</h2>
                            </div>
                         </div>
                       
