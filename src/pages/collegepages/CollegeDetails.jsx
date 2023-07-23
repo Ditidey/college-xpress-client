@@ -1,3 +1,4 @@
+import { Rating } from '@smastrom/react-rating';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ const CollegeDetails = () => {
             <div className='text-center'>
                 <img src={collegeImage} alt="" className='w-44 h-44 rounded-full mx-auto'/>
                 <h2 className='font-bold text-3xl mt-3'>{collegeName}</h2>
+                <p className='md:ms-64'><Rating value={collegeRating} style={{ maxWidth: 80 }} readOnly className='ms-96'></Rating></p>
                 <p className='mb-3'>{shortDescription}</p>
                 <p className='text-orange-400'>Research: {researchCount}</p>
                 <p>Teachers: {teachersCount}  <span className='ms-8'>Students: {students} </span></p>
