@@ -36,13 +36,13 @@ const HeroSection = () => {
                         {/* right side hero section */}
                    
                         <div id='wavy' className='items-center md:px-20 px-10 bg-white md:flex' data-aos="fade-up-left" data-aos-duration="1000"  >
-                           <div className='md:absolute end-14   '  >
+                           <div className='md:absolute end-14 '  >
                          
-                           <Lottie animationData={lottieAni2} className='md:h-[400px] h-[250px] md:pt-0 pt-10 md:w-[400px] w-[250px] mx-auto pb-20 -top-16 -translate-x-6' />
+                           <Lottie animationData={lottieAni2} className='md:h-[420px] h-[250px] md:pt-0 pt-10 md:w-[400px] w-[250px] mx-auto pb-20 -top-16 -translate-x-6 ' />
 
                            </div>
                            <div className=' '>
-                            <h2 className='md:text-4xl text-3xl text-blue-400 pb-5 font-semibold'>Well service, well learning</h2>
+                            <h2 className='md:text-4xl text-3xl text-blue-400 pb-5 font-semibold '>Well service, well learning</h2>
                            </div>
                         </div>
                       

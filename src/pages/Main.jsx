@@ -5,7 +5,7 @@ import Footer from "../components/shared/Footer";
  
 const Main = () => {
     return (
-        <div className="max-h-screen md:max-w-screen-2xl">
+        <div className="w-full">
            <div className="md:w-[1450px] mx-auto">
            <NavBar></NavBar>
             <Outlet></Outlet>

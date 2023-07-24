@@ -16,11 +16,11 @@ const NavBar = () => {
     }
 
     return (
-        <div className="flex md:justify-evenly rounded-2xl shadow-xl md:px-6 px-2 py-4 p-3 w-full">
+        <div className="flex md:justify-evenly rounded-2xl shadow-xl  py-4 p-3 w-full">
             <div className="flex">
                 <Link to='/' className='flex'>
                     <img src={logo} alt="" className='w-8 h-8' />
-                    <a className="btn btn-ghost normal-case text-2xl font-sans font-bold md:ms-2">CollegeXpress</a>
+                    <a className="btn btn-ghost normal-case text-2xl font-sans font-bold md:ms-2 me-6">CollegeXpress</a>
                 </Link>
             </div>
 
@@ -38,7 +38,7 @@ const NavBar = () => {
                             user ? <>
                                 <li><NavLink to='/my-college' className={({ isActive }) => isActive ? 'text-red-800 font-bold' : ''}>My college</NavLink></li>
                                 <li className=" "  >
-                                    <NavLink to='/pro-page'> <img src={user.photoURL} className='w-10 h-10 rounded-full' /></NavLink>
+                                    <NavLink to='/pro-page'> <img src={user.photoURL} className='w-10 h-10 rounded-full' /> <span className='text-xs'>{user?.displayName}</span></NavLink>
                                 </li>
                                 <li onClick={handleLogout} className='btn btn-outline btn-info'>Logout</li>
 
